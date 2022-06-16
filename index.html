@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kho sách nói online/ offline</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/slick.css">
+
+    <link rel="stylesheet" href="css/all.min.css" />
+   <link rel="stylesheet" href="style.css" />
+   <link rel="shortcut icon" href="image/logo.png" type="image/png">
+  </head>
+  <body >
+    <header class="sticky-top" id="header">
+      
+    <div class="container p-0">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-12">
+          <div class="logo">
+          <a href="#">
+            <img src="Image/logo.png" class="my-md-4" alt="" title="Thư viện sách nói"/>
+          </a>
+        </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+          <h3 class="my-md-3 site-title" ><a href="index.html" title="Thư viện sách nói" style="color:#1ba085">AUDIO BOOK</a></h3>
+        </div>
+        <div class="col-md-4 col-12 float-right">
+          <p class="my-md-4 header-links text-right">
+            <a href="#" class="px-2 text-dark  header-links-item"     
+            onclick="document.getElementById('id01').style.display='block'"
+            style="width: auto;"   ><i class="far fa-user-circle"></i> ĐĂNG NHẬP</a>
+            &frasl;
+            <a href="#" class="px-1 text-dark header-links-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">TÀI KHOẢN MỚI</a>
+          
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  
+  </header>
+    
+  <div class="top-head-menu">
+      <div class="container p-0">
+        <nav class="navbar navbar-expand-md navbar-light p-0">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active ml-0">
+                <a class="nav-link" href="#"
+                  ><span><i class="fas fa-home"></i></span> TRANG CHỦ <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">SÁCH NÓI</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="allbook1.html">Tất cả</a>
+                  <a class="dropdown-item" href="#">Việt Nam</a>
+                  <a class="dropdown-item" href="#">Nước ngoài</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">TRUYỆN TRANH</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="index2.html">Tất cả</a>
+                  <a class="dropdown-item" href="#">Việt Nam</a>
+                  <a class="dropdown-item" href="#">Nước ngoài</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">TÁC GIẢ</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Tất cả</a>
+                  <a class="dropdown-item" href="#">Việt Nam</a>
+                  <a class="dropdown-item" href="#">Nước ngoài</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">VỀ CHÚNG TÔI</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-nav" >
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item" id="inp-search">
+                <input type="text" placeholder="Search.." style=" border-radius: 20px;" id="search"  autocomplete="off" name="search">
+              </li>
+              <li
+                class="nav-item border rounded-circle mx-2 basket-icon list-inline-item"
+              >
+              <a href="cart.html"><i class="fas fa-shopping-basket p-2"></i></a>
+              
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      </div>
+    
+    <main>
+      <div class="container p-0">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="image/main/1068_new.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="image/main/1405_new.png"
+                alt="..." class="d-block w-100 "
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="image/main/1494_new.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="image/main/988_new.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="image/main/1431_new.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next "
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon fa-2x text-secondary" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </main>
+
+  <div class="container mt-3">
+    <div class="content menu-list">
+    <div class="row">
+      <div class="col-3 bg-white rounded box-shadow" style="box-shadow: inset 0 0px 3px 0 rgba(0, 0, 0, 0.2);
+    ">
+        <div class="header">
+          <p style="font-size: 16px;
+          line-height: 1.1;
+          padding-top: 9px;">DANH MỤC</p>
+        </div>
+        <div class="content-menu">
+          <ul>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Sách nói</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Ngôn tình</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Hành động</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Kinh doanh</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Kỹ năng sống</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Truyện tranh</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Kinh dị</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Tuyển tập chọn lọc</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Thiếu nhi</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Tác phẩm kinh điển</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Chăm sóc gia đình</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Văn học</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Nhân vật - Sự kiện</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Văn hóa - Xã hội</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Khoa học - Công nghệ</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Tác giả</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Tạp chí & chuyên đề</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+            <li class="has-child">
+              <a href="#">
+                <p class="float-left">Drama</p>
+                <span class="float-right text-secondary">1,095</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-9 pr-0 hot-free">
+        <div class="title">
+          <h3>Sách mới trong tuần</h3>
+        </div>
+        <div class="book-row">
+
+        <div class="card-book" style="height: 100%;">
+          <div  class=" bg-white">
+          <div class="t-card-book mt-4" style="width: 100%;">
+            <a href="#" class="t-card-book-img relative">
+              <div class="book-image">
+              <img src="image/1438 (1).jpg" alt="">
+            </div>
+            <span class="play-btn play-btn-new-book"><i class="fas fa-play"></i></span>
+            </a>
+            <div class="t-card-book-info ">
+              <a href="#"><p>Steve Job - Sức mạnh của sự khác biệt </p></a>
+              <a href=""><p>GS-TS. Huỳnh Ngọc Phiên</p></a>
+              <span><i class="fas fa-heart checked"></i></span>
+              <span><i class="fas fa-heart checked"></i></span>
+              <span><i class="fas fa-heart checked"></i></span>
+              <span><i class="fas fa-heart"></i></span>
+              <span><i class="fas fa-heart"></i></span>
+              <p><small>Mới cập nhật</small></p>
+              <p ><a href="#" class="detail">Chi tiết</a></p>
+            </div>
+            <div class="t-break-line"></div>
+            <div class="t-card-book-likes text-secondary"><small>3.676 lượt xem</small></div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="card-book" style="height: 100%;">
+        <div  class=" bg-white">
+        <div class="t-card-book mt-4" style="width: 100%;">
+          <a href="#" class="t-card-book-img relative">
+            <div class="book-image">
+            <img src="image/10516.jpg" alt="">
+          </div>
+          <span class="play-btn play-btn-new-book"><i class="fas fa-play"></i></span>
+          </a>
+          <div class="t-card-book-info">
+            <a href="#"><p>Steve Job - Sức mạnh của sự khác biệt </p></a>
+            <a href=""><p>GS-TS. Huỳnh Ngọc Phiên</p></a>
+            <span><i class="fas fa-heart checked"></i></span>
+            <span><i class="fas fa-heart checked"></i></span>
+            <span><i class="fas fa-heart checked"></i></span>
+            <span><i class="fas fa-heart"></i></span>
+            <span><i class="fas fa-heart"></i></span>
+            <p><small>Mới cập nhật</small></p>
+            <p ><a href="#" class="detail">Chi tiết</a></p>
+          </div>
+          <div class="t-break-line"></div>
+          <div class="t-card-book-likes text-secondary"><small>3.676 lượt xem</small></div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="card-book" style="height: 100%;">
+      <div  class=" bg-white">
+      <div class="t-card-book mt-4" style="width: 100%;">
+        <a href="#" class="t-card-book-img relative">
+          <div class="book-image">
+          <img src="image/564.jpg" alt="">
+        </div>
+        <span class="play-btn play-btn-new-book"><i class="fas fa-play"></i></span>
+        </a>
+        <div class="t-card-book-info">
+          <a href="#"><p>Steve Job - Sức mạnh của sự khác biệt </p></a>
+          <a href=""><p>GS-TS. Huỳnh Ngọc Phiên</p></a>
+          <span><i class="fas fa-heart checked"></i></span>
+          <span><i class="fas fa-heart checked"></i></span>
+          <span><i class="fas fa-heart checked"></i></span>
+          <span><i class="fas fa-heart"></i></span>
+          <span><i class="fas fa-heart"></i></span>
+          <p><small>Mới cập nhật</small></p>
+          <p ><a href="#" class="detail">Chi tiết</a></p>
+        </div>
+        <div class="t-break-line"></div>
+        <div class="t-card-book-likes text-secondary"><small>3.676 lượt xem</small></div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="card-book" style="height: 100%;">
+    <div  class=" bg-white">
+    <div class="t-card-book mt-4" style="width: 100%;">
+      <a href="#" class="t-card-book-img relative">
+        <div class="book-image">
+        <img src="image/24959.jpg" alt="">
+      </div>
+      <span class="play-btn play-btn-new-book"><i class="fas fa-play"></i></span>
+      </a>
+      <div class="t-card-book-info">
+        <a href="#"><p>Steve Job - Sức mạnh của sự khác biệt </p></a>
+        <a href=""><p>GS-TS. Huỳnh Ngọc Phiên</p></a>
+        <span><i class="fas fa-heart checked"></i></span>
+        <span><i class="fas fa-heart checked"></i></span>
+        <span><i class="fas fa-heart checked"></i></span>
+        <span><i class="fas fa-heart"></i></span>
+        <span><i class="fas fa-heart"></i></span>
+        <p><small>Mới cập nhật</small></p>
+        <p ><a href="#" class="detail">Chi tiết</a></p>
+      </div>
+      <div class="t-break-line"></div>
+      <div class="t-card-book-likes text-secondary"><small>3.676 lượt xem</small></div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="card-book" style="height: 100%;">
+  <div  class=" bg-white">
+  <div class="t-card-book mt-4" style="width: 100%;">
+    <a href="#" class="t-card-book-img relative">
+      <div class="book-image">
+      <img src="image/15173.jpg" alt="">
+    </div>
+    <span class="play-btn play-btn-new-book"><i class="fas fa-play"></i></span>
+    </a>
+    <div class="t-card-book-info">
+      <a href="#"><p>Steve Job - Sức mạnh của sự khác biệt </p></a>
+      <a href=""><p>GS-TS. Huỳnh Ngọc Phiên</p></a>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart"></i></span>
+      <span><i class="fas fa-heart"></i></span>
+      <p><small>Mới cập nhật</small></p>
+      <p ><a href="#" class="detail">Chi tiết</a></p>
+    </div>
+    <div class="t-break-line"></div>
+    <div class="t-card-book-likes text-secondary"><small>3.676 lượt xem</small></div>
+  </div>
+  
+</div>
+</div>
+
+<div class="card-book" style="height: 100%;">
+  <div  class=" bg-white">
+  <div class="t-card-book mt-4" style="width: 100%;">
+    <a href="#" class="t-card-book-img relative">
+      <div class="book-image">
+      <img src="image/3824.jpg" alt="">
+    </div>
+    <span class="play-btn play-btn-new-book"><i class="fas fa-play"></i></span>
+    </a>
+    <div class="t-card-book-info">
+      <a href="#"><p>Steve Job - Sức mạnh của sự khác biệt </p></a>
+      <a href=""><p>GS-TS. Huỳnh Ngọc Phiên</p></a>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart"></i></span>
+      <span><i class="fas fa-heart"></i></span>
+      <p><small>Mới cập nhật</small></p>
+      <p ><a href="#" class="detail">Chi tiết</a></p>
+    </div>
+    <div class="t-break-line"></div>
+    <div class="t-card-book-likes text-secondary"><small>3.676 lượt xem</small></div>
+  </div>
+  
+</div>
+</div>
+
+<div class="card-book" style="height: 100%;">
+  <div  class=" bg-white">
+  <div class="t-card-book mt-4" style="width: 100%;">
+    <a href="#" class="t-card-book-img relative">
+      <div class="book-image">
+      <img src="image/4284.jpg" alt="">
+    </div>
+    <span class="play-btn play-btn-new-book"><i class="fas fa-play"></i></span>
+    </a>
+    <div class="t-card-book-info">
+      <a href="#"><p>Steve Job - Sức mạnh của sự khác biệt </p></a>
+      <a href=""><p>GS-TS. Huỳnh Ngọc Phiên</p></a>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart"></i></span>
+      <span><i class="fas fa-heart"></i></span>
+      <p><small>Mới cập nhật</small></p>
+      <p ><a href="#" class="detail">Chi tiết</a></p>
+    </div>
+    <div class="t-break-line"></div>
+    <div class="t-card-book-likes text-secondary"><small>3.676 lượt xem</small></div>
+  </div>
+  
+</div>
+</div>
+
+<div class="card-book" style="height: 100%;">
+  <div  class=" bg-white">
+  <div class="t-card-book mt-4" style="width: 100%;">
+    <a href="#" class="t-card-book-img relative">
+      <div class="book-image">
+      <img src="image/8676.jpg" alt="">
+    </div>
+    <span class="play-btn play-btn-new-book"><i class="fas fa-play"></i></span>
+    </a>
+    <div class="t-card-book-info">
+      <a href="#"><p>Steve Job - Sức mạnh của sự khác biệt </p></a>
+      <a href=""><p>GS-TS. Huỳnh Ngọc Phiên</p></a>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart"></i></span>
+      <span><i class="fas fa-heart"></i></span>
+      <p><small>Mới cập nhật</small></p>
+      <p ><a href="#" class="detail">Chi tiết</a></p>
+    </div>
+    <div class="t-break-line"></div>
+    <div class="t-card-book-likes text-secondary"><small>3.676 lượt xem</small></div>
+  </div>
+  
+</div>
+</div>
+
+<div class="card-book" style="height: 100%;">
+  <div  class=" bg-white">
+  <div class="t-card-book mt-4" style="width: 100%;">
+    <a href="#" class="t-card-book-img relative">
+      <div class="book-image">
+      <img src="image/2391.jpg" alt="">
+    </div>
+    <span class="play-btn play-btn-new-book"><i class="fas fa-play"></i></span>
+    </a>
+    <div class="t-card-book-info">
+      <a href="#"><p>Steve Job - Sức mạnh của sự khác biệt </p></a>
+      <a href=""><p>GS-TS. Huỳnh Ngọc Phiên</p></a>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart checked"></i></span>
+      <span><i class="fas fa-heart"></i></span>
+      <span><i class="fas fa-heart"></i></span>
+      <p><small>Mới cập nhật</small></p>
+      <p ><a href="#" class="detail">Chi tiết</a></p>
+    </div>
+    <div class="t-break-line"></div>
+    <div class="t-card-book-likes text-secondary"><small>3.676 lượt xem</small></div>
+  </div>
+  
+</div>
+</div>
+        
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <section>
+    <div class="container pt-3">
+      <div class="row cat-box" style="background-color: #8bd0de;">
+        <div class="col-3 left">
+          <div class="cat-desc relative">
+            <div class="left-top-corner absolute"></div>
+            <div class="right-top-corner absolute"></div>
+            <div class="left-bottom-corner absolute"></div>
+            <div class="right-bottom-corner absolute"></div>
+
+                <span>TUYỂN TẬP</span>
+                <div class="h-wrap">SÁCH NÓI</div>
+                <span>HAY NHẤT</span>
+          </div>
+        </div>
+        <div class="col-9 right">
+          <div class="site-slider-two-2">
+          <div class="slider-two-2">
+            <div> <a href="index1.html">
+              <img src="image/446.jpg" alt="" class="img-fluid rounded">
+            </a>
+            </div>
+            <div>
+              <a href="#"><img src="image/448.jpg" alt="" class="img-fluid rounded"> 
+          </a></div>
+            <div>
+              <a href="#"><img src="image/449.jpg" alt="" class="img-fluid rounded">
+              </a></div>
+            <div><a href="#"><img src="image/450.jpg" alt="" class="img-fluid rounded"> </a></div>
+            <div><a href="#"><img src="image/453.jpg" alt="" class="img-fluid rounded"> </a></div>
+            <div><a href="#"><img src="image/738.jpg" alt="" class="img-fluid rounded"> </a></div>
+          </div>
+          <div class="slider-btn">
+            <span class="prev position-top bg"><i class="fas fa-chevron-left"></i></span>
+            <span class="next position-top right-0 bg"><i class="fas fa-chevron-right"></i></span>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <div class="container">
+  <div class="content1">
+
+      <div class="title">
+        <h3>Được đánh giá cao</h3>
+      </div>
+
+      <div class="site-slider">
+        <div class="slider-four">
+          <div>
+            
+              <div class="card card-slider bg-white box-shadow rounded">
+                <a href="#">
+                <img src="image/22306.jpg" alt="" class="card-img-top w-100">
+                </a>
+              <div class="card-body">
+                <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+                <p class="card-author"><a href="#">Seth Godin</a></p>
+                <hr>
+                <p class="card-text"><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span></p>
+              </div>
+              <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span>
+              </div>
+              </div>
+            
+        
+          </div>
+          <div><div class="card card-slider bg-white rounded">
+            <a href="#">
+            <img src="image/21729.jpg" alt="" class="card-img-top w-100">
+            </a>
+          <div class="card-body">
+            <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+            <p class="card-author "><a href="#">Seth Godin</a></p>
+            <hr>
+            <p class="card-text"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+          <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span></div>
+          </div>
+          </div>
+          <div><div class="card card-slider bg-white rounded">
+            <a href="#">
+            <img src="image/24941.jpg" alt="" class="card-img-top w-100">
+            </a>
+          <div class="card-body">
+            <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+            <p class="card-author "><a href="#">Seth Godin</a></p>
+            <hr>
+            <p class="card-text"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+          <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span></div>
+          </div>
+          </div>
+          <div><div class="card card-slider bg-white rounded">
+            <a href="#">
+            <img src="image/18765.jpg" alt="" class="card-img-top w-100">
+            </a>
+          <div class="card-body">
+            <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+            <p class="card-author"><a href="#">Seth Godin</a></p>
+            <hr>
+            <p class="card-text"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+          <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span></div>
+          </div></div>
+          <div><div class="card card-slider bg-white rounded">
+            <a href="#">
+            <img src="image/18986.jpg" alt="" class="card-img-top w-100">
+            </a>
+          <div class="card-body">
+            <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+            <p class="card-author"><a href="#">Seth Godin</a></p>
+            <hr>
+            <p class="card-text"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+          <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span></div>
+          </div></div>
+          <div><div class="card card-slider bg-white rounded">
+            <a href="#">
+            <img src="image/18983.jpg" alt="" class="card-img-top w-100">
+            </a>
+          <div class="card-body">
+            <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+            <p class="card-author"><a href="#">Seth Godin</a></p>
+            <hr>
+            <p class="card-text"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+          <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span></div>
+          </div></div>
+          <div><div class="card card-slider bg-white">
+            <a href="#">
+            <img src="image/19449.jpg" alt="" class="card-img-top w-100">
+            </a>
+          <div class="card-body">
+            <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+            <p class="card-author"><a href="#">Seth Godin</a></p>
+            <hr>
+            <p class="card-text"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+          <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span></div>
+          </div></div>
+          <div><div class="card card-slider bg-white rounded">
+            <a href="#">
+            <img src="image/19820.jpg" alt="" class="card-img-top w-100">
+            </a>
+          <div class="card-body">
+            <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+            <p class="card-author"><a href="#">Seth Godin</a></p>
+            <hr>
+            <p class="card-text"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+          <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span></div>
+          </div></div>
+          <div><div class="card card-slider bg-white rounded">
+            <a href="#">
+            <img src="image/24949.jpg" alt="" class="card-img-top w-100">
+            </a>
+          <div class="card-body">
+            <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+            <p class="card-author"><a href="#">Seth Godin</a></p>
+            <hr>
+            <p class="card-text"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+          <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span></div>
+          </div></div>
+          <div><div class="card card-slider bg-white rounded">
+            <a href="#">
+            <img src="image/203.jpg" alt="" class="card-img-top w-100">
+            </a>
+          <div class="card-body">
+            <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+            <p class="card-author"><a href="#">Seth Godin</a></p>
+            <hr>
+            <p class="card-text"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+          <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span></div>
+          </div></div>
+          <div><div class="card card-slider bg-white rounded">
+            <a href="#">
+            <img src="image/2013.jpg" alt="" class="card-img-top w-100">
+            </a>
+          <div class="card-body">
+            <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+            <p class="card-author"><a href="#">Seth Godin</a></p>
+            <hr>
+            <p class="card-text"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+          <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span></div>
+          </div></div>
+          <div><div class="card card-slider bg-white rounded">
+            <a href="#">
+            <img src="image/1466.jpg" alt="" class="card-img-top w-100">
+            </a>
+          <div class="card-body">
+            <p class="card-title"><a href="#">Nhân sự cốt cán</a></p>
+            <p class="card-author"><a href="#">Seth Godin</a></p>
+            <hr>
+            <p class="card-text"><span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span></p>
+          </div>
+          <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span></div>
+          </div></div>
+        </div>
+        <div class="slider-btn">
+          <span class="prev position-top left-1"><i class="fas fa-chevron-left text-secondary"></i></span>
+          <span class="next position-top right-0"><i class="fas fa-chevron-right text-secondary"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="comic-box" data-spy="scroll">
+    <div class="container">
+      <div class="comic-box-header pt-3">
+        <div class="row ">
+          <div class="col-3 comic-box-title" style="background-color: #ce8282;">
+        <a href="#">
+        <p class="text-center">Truyện</p>
+        <p class="text-center">Tranh</p>
+        </a>
+          </div>
+          <div class="col-9 comic-quotes text-center">
+            <p class="text-quotes" style="color: #000;">
+            "Không quan trọng mày là ai, đừng mắc công thanh minh, những gì mày đang làm, sẽ định nghĩa con người mày."
+          </p>
+          <p class="author" style="color:#000">-Joker-</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="comic-box-desc py-3">
+        <div class="site-slider-comic">
+          <div class="slider-comic-box">
+            <div class="mr-5">
+            <div class="slider-img-comic p-3 rounded active-img" > <a href="indexcomic.html">
+              <img data-lazy="image/320.jpg" alt="" class="w-100">
+            </a>
+            </div>
+            
+          </div>
+            <div class="mr-5">
+              <div class="slider-img-comic p-3 rounded">
+              <a href="#"><img data-lazy="image/583.jpg" alt="" class="w-100"> 
+          </a></div>
+        </div>
+            <div class="mr-5">
+              <div class="slider-img-comic p-3 rounded">
+              <a href="#"><img data-lazy="image/619.jpg" alt="" class="w-100">
+              </a></div></div>
+            <div class="mr-5"><div class="slider-img-comic p-3 rounded"><a href="#"><img data-lazy="image/482.jpg" alt="" class="w-100"> </a></div></div>
+            <div class="mr-5"><div class="slider-img-comic p-3 rounded"><a href="#"><img data-lazy="image/586.jpg" alt="" class="w-100"> </a></div></div>
+            <div class="mr-5"><div class="slider-img-comic p-3 rounded"><a href="#"><img data-lazy="image/485.jpg" alt="" class="w-100"> </a></div></div>
+            <div class="mr-5"><div class="slider-img-comic p-3 rounded"><a href="#"><img data-lazy="image/476.jpg" alt="" class="w-100"> </a></div></div>
+          </div>
+          <div class="slider-btn">
+            <span class="prev position-top left-1"><i class="fas fa-chevron-left"></i></span>
+            <span class="next position-top right-0"><i class="fas fa-chevron-right"></i></span>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="content2 bg-white px-2">
+      <div class="title">
+        <h3>Sách nghe nhiều nhất</h3>
+      </div>
+      <div class="px-3 mt-3">
+      <div class="site-slider-sale py-3 relative">
+        <div class="slider-sale-book">
+          <div class="swiper-slide mr-4">
+            
+            <div class="card card-slider bg-white box-shadow rounded">
+              <div class="p-3 book-img relative">
+              
+              <img src="image/8655.jpg" alt="" class="card-img-top w-100">
+              <div class="top-sale-detail absolute">
+                <div class="top-sale-detail-content mt-4 mx-3">
+                <p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p> 
+                <p>
+                <a href="#" class="author">Howard Yu</a>
+              </p>
+                <p ><a href="index1.html" class="top-sale-detail-link">Chi tiết</a></p>
+              </div>
+              </div>
+            </div>
+
+            <div class="card-body text-center">
+              <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+            </div>
+            
+            </div>
+        </div>
+        <div class="swiper-slide mr-4">
+            
+          <div class="card card-slider bg-white box-shadow rounded">
+            <div class="p-3 book-img relative">
+            
+            <img src="image/10721.jpg" alt="" class="card-img-top w-100">
+            <div class="top-sale-detail absolute">
+              <div class="top-sale-detail-content mt-4 mx-3">
+              <a href=""><p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p></a> 
+              <p>
+              <a href="#" class="author">Howard Yu</a>
+            </p>
+              <p ><a href="#" class="top-sale-detail-link">Chi tiết</a></p>
+            </div>
+            </div>
+          </div>
+
+          <div class="card-body text-center">
+            <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+          </div>
+          
+          </div>
+      </div>
+
+      <div class="swiper-slide mr-4">
+            
+        <div class="card card-slider bg-white box-shadow rounded">
+          <div class="p-3 book-img relative">
+          
+          <img src="image/8043.jpg" alt="" class="card-img-top w-100">
+          <div class="top-sale-detail absolute">
+            <div class="top-sale-detail-content mt-4 mx-3">
+            <a href=""><p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p></a> 
+            <p>
+            <a href="#" class="author">Howard Yu</a>
+          </p>
+            <p ><a href="#" class="top-sale-detail-link">Chi tiết</a></p>
+          </div>
+          </div>
+        </div>
+
+        <div class="card-body text-center">
+          <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+        </div>
+        
+        </div>
+    </div>
+
+    <div class="swiper-slide mr-4">
+            
+      <div class="card card-slider bg-white box-shadow rounded">
+        <div class="p-3 book-img relative">
+        
+        <img src="image/924.jpg" alt="" class="card-img-top w-100">
+        <div class="top-sale-detail absolute">
+          <div class="top-sale-detail-content mt-4 mx-3">
+          <a href=""><p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p></a> 
+          <p>
+          <a href="#" class="author">Howard Yu</a>
+        </p>
+          <p ><a href="#" class="top-sale-detail-link">Chi tiết</a></p>
+        </div>
+        </div>
+      </div>
+
+      <div class="card-body text-center">
+        <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+      </div>
+      
+      </div>
+  </div>
+
+  <div class="swiper-slide mr-4">
+            
+    <div class="card card-slider bg-white box-shadow rounded">
+      <div class="p-3 book-img relative">
+      
+      <img src="image/1459.jpg" alt="" class="card-img-top w-100">
+      <div class="top-sale-detail absolute">
+        <div class="top-sale-detail-content mt-4 mx-3">
+        <a href=""><p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p></a> 
+        <p>
+        <a href="#" class="author">Howard Yu</a>
+      </p>
+        <p ><a href="#" class="top-sale-detail-link">Chi tiết</a></p>
+      </div>
+      </div>
+    </div>
+
+    <div class="card-body text-center">
+      <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+    </div>
+    
+    </div>
+</div>
+
+<div class="swiper-slide mr-4">
+            
+  <div class="card card-slider bg-white box-shadow rounded">
+    <div class="p-3 book-img relative">
+    
+    <img src="image/1445.jpg" alt="" class="card-img-top w-100">
+    <div class="top-sale-detail absolute">
+      <div class="top-sale-detail-content mt-4 mx-3">
+      <a href=""><p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p></a> 
+      <p>
+      <a href="#" class="author">Howard Yu</a>
+    </p>
+      <p ><a href="#" class="top-sale-detail-link">Chi tiết</a></p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card-body text-center">
+    <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+  </div>
+  
+  </div>
+</div>
+
+<div class="swiper-slide mr-4">
+            
+  <div class="card card-slider bg-white box-shadow rounded">
+    <div class="p-3 book-img relative">
+    
+    <img src="image/1443.jpg" alt="" class="card-img-top w-100">
+    <div class="top-sale-detail absolute">
+      <div class="top-sale-detail-content mt-4 mx-3">
+      <a href=""><p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p></a> 
+      <p>
+      <a href="#" class="author">Howard Yu</a>
+    </p>
+      <p ><a href="#" class="top-sale-detail-link">Chi tiết</a></p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card-body text-center">
+    <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+  </div>
+  
+  </div>
+</div>
+
+<div class="swiper-slide mr-4">
+            
+  <div class="card card-slider bg-white box-shadow rounded">
+    <div class="p-3 book-img relative">
+    
+    <img src="image/1448.jpg" alt="" class="card-img-top w-100">
+    <div class="top-sale-detail absolute">
+      <div class="top-sale-detail-content mt-4 mx-3">
+      <a href=""><p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p></a> 
+      <p>
+      <a href="#" class="author">Howard Yu</a>
+    </p>
+      <p ><a href="#" class="top-sale-detail-link">Chi tiết</a></p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card-body text-center">
+    <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+  </div>
+  
+  </div>
+</div>
+
+<div class="swiper-slide mr-4">
+            
+  <div class="card card-slider bg-white box-shadow rounded">
+    <div class="p-3 book-img relative">
+    
+    <img src="image/1451.jpg" alt="" class="card-img-top w-100">
+    <div class="top-sale-detail absolute">
+      <div class="top-sale-detail-content mt-4 mx-3">
+      <a href=""><p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p></a> 
+      <p>
+      <a href="#" class="author">Howard Yu</a>
+    </p>
+      <p ><a href="#" class="top-sale-detail-link">Chi tiết</a></p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card-body text-center">
+    <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+  </div>
+  
+  </div>
+</div>
+
+<div class="swiper-slide mr-4">
+            
+  <div class="card card-slider bg-white box-shadow rounded">
+    <div class="p-3 book-img relative">
+    
+    <img src="image/1453.jpg" alt="" class="card-img-top w-100">
+    <div class="top-sale-detail absolute">
+      <div class="top-sale-detail-content mt-4 mx-3">
+      <a href=""><p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p></a> 
+      <p>
+      <a href="#" class="author">Howard Yu</a>
+    </p>
+      <p ><a href="#" class="top-sale-detail-link">Chi tiết</a></p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card-body text-center">
+    <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+  </div>
+  
+  </div>
+</div>
+
+<div class="swiper-slide mr-4">
+            
+  <div class="card card-slider bg-white box-shadow rounded">
+    <div class="p-3 book-img relative">
+    
+    <img src="image/2296.jpg" alt="" class="card-img-top w-100">
+    <div class="top-sale-detail absolute">
+      <div class="top-sale-detail-content mt-4 mx-3">
+      <a href=""><p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p></a> 
+      <p>
+      <a href="#" class="author">Howard Yu</a>
+    </p>
+      <p ><a href="#" class="top-sale-detail-link">Chi tiết</a></p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card-body text-center">
+    <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+  </div>
+  
+  </div>
+</div>
+
+<div class="swiper-slide">
+            
+  <div class="card card-slider bg-white box-shadow rounded">
+    <div class="p-3 book-img relative">
+    
+    <img src="image/2289.jpg" alt="" class="card-img-top w-100">
+    <div class="top-sale-detail absolute">
+      <div class="top-sale-detail-content mt-4 mx-3">
+      <a href=""><p class="book-tiltle ">Leap - Đột phá tư duy trong kinh doanh</p></a> 
+      <p>
+      <a href="#" class="author">Howard Yu</a>
+    </p>
+      <p ><a href="index1.html" class="top-sale-detail-link">Chi tiết</a></p>
+    </div>
+    </div>
+  </div>
+
+  <div class="card-body text-center">
+    <span>3.059 lượt nghe <i class="fas fa-headphones"></i></span>
+  </div>
+  
+  </div>
+</div>
+
+        </div>
+        <div class="slider-btn">
+          <span class="prev position-top  left-1"><i class="fas fa-chevron-left fa-2x"></i></span>
+          <span class="next position-top right-0"><i class="fas fa-chevron-right fa-2x"></i></span>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </div>
+  <section>
+    <div class="container pt-3">
+      <div class="row cat-box" style="background-color: #8bd0de;">
+        <div class="col-sm-3 left">
+          <div class="cat-desc relative">
+            <div class="left-top-corner absolute"></div>
+            <div class="right-top-corner absolute"></div>
+            <div class="left-bottom-corner absolute"></div>
+            <div class="right-bottom-corner absolute"></div>
+
+            <div class="schedule-desc">
+              <p>Lịch phát hành</p>
+              <span class="bd lbd"></span>
+              <span class="year">2020</span>
+              <span class="bd lbd"></span>
+              <span class="sch-month">Tháng 09</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9 right" >
+          <div class="site-slider-two">
+          <div class="slider-two" >
+            <a href="index1.html" >
+              <div class="schedule-item rounded">
+                <div class="calendar">
+                  <div class="content-calendar">
+                    <span class="week-day">Thứ 3</span>
+                    <span class="date">07/09</span>
+                  </div>
+                </div>
+                <div class="schedule-name">
+                  <h3>Thịnh Thế Kiều Y</h3>
+                  <p>Tập 13</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="index1.html" >
+              <div class="schedule-item rounded">
+                <div class="calendar">
+                  <div class="content-calendar">
+                    <span class="week-day">Thứ 3</span>
+                    <span class="date">08/09</span>
+                  </div>
+                </div>
+                <div class="schedule-name">
+                  <h3>Ấn Công Đức</h3>
+                  <p>Tập 13</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="index1.html" >
+              <div class="schedule-item rounded">
+                <div class="calendar">
+                  <div class="content-calendar">
+                    <span class="week-day">Thứ 3</span>
+                    <span class="date">09/09</span>
+                  </div>
+                </div>
+                <div class="schedule-name">
+                  <h3>Truy tìm bóng đêm</h3>
+                  <p>Tập 13</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="index1.html" >
+              <div class="schedule-item rounded">
+                <div class="calendar">
+                  <div class="content-calendar">
+                    <span class="week-day">Thứ 3</span>
+                    <span class="date">10/09</span>
+                  </div>
+                </div>
+                <div class="schedule-name">
+                  <h3>Thịnh Thế Kiều Y</h3>
+                  <p>Tập 13</p>
+                </div>
+              </div>
+            </a>
+            
+          </div>
+          <div class="slider-btn">
+            <span class="prev position-top bg" style="top:45%"><i class="fas fa-chevron-left"></i></span>
+            <span class="next position-top bg"  style="top:45%; right:4px;"><i class="fas fa-chevron-right"></i></span>
+          </div>
+
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <div class="container mt-5 bg-white thank-box">
+    <div class="thank-quote text-center">
+      <p>Cảm ơn các bạn đã tin tưởng đọc sách của Dogu. Chúc các bạn đọc sách vui vẻ !</p>
+    </div>
+    <div class="pt-4 ">
+      <div class="row row-cols-1 row-cols-md-5">
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="image/strengths-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Đọc ở mọi lúc mọi nơi</h5>
+              <p class="card-text">Dogu dùng được trên máy vi tính, di động, máy tính bảng của bạn.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="image/strengths-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Không quảng cáo</h5>
+              <p class="card-text">Tất cả các sách bạn đọc đều không có quảng cáo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="image/strengths-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tải 	&#38; đọc ngoại tuyến</h5>
+              <p class="card-text">Sách đã tải về máy không cần mạng khi đọc nữa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="image/strengths-4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Đa dạng thể loại nội dung</h5>
+              <p class="card-text">Dogu có đầy đủ thể thoại sách hiện nay.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="image/strengths-5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Đọc sách VIP siêu rẻ</h5>
+              <p class="card-text">Chỉ 1,000 vnđ/ngày là bạn có thể đọc tất cả những gì Dogu có.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="quotes">
+    <div class="container">
+      <div class="site-slider-three">
+      <div class="slider-three">
+        
+        <div><p class="cus-name">_ Cư xử như người thành công, suy nghĩ như người thành đạt, Steve Harvey _</p>
+          <p class="cus-quotes"><span ><i class="fas fa-quote-left"></i></span>   Bạn của tôi, cảm giác chán ghét bản thân không phải là xấu, vì nó có nghĩa là bạn sẵn sàng tạo nên những thay đổi trong cuộc đời để đạt được những phần thưởng lớn lao.</p>
+        </div>
+
+        <div><p class="cus-name">_ Cư xử như người thành công, suy nghĩ như người thành đạt, Steve Harvey _</p>
+          <p class="cus-quotes"><span ><i class="fas fa-quote-left"></i></span> Bạn của tôi, cảm giác chán ghét bản thân không phải là xấu, vì nó có nghĩa là bạn sẵn sàng tạo nên những thay đổi trong cuộc đời để đạt được những phần thưởng lớn lao.</p>
+        </div>
+        <div><p class="cus-name">_ Cư xử như người thành công, suy nghĩ như người thành đạt, Steve Harvey _</p>
+          <p class="cus-quotes"><span ><i class="fas fa-quote-left"></i></span> Bạn của tôi, cảm giác chán ghét bản thân không phải là xấu, vì nó có nghĩa là bạn sẵn sàng tạo nên những thay đổi trong cuộc đời để đạt được những phần thưởng lớn lao.</p>
+        </div>
+      </div>
+      <div class="slider-btn">
+        <span class="prev position-top" style="top:30%"><i class="fas fa-chevron-left fa-2x text-white"></i></span>
+        <span class="next position-top right-0" style="top:30%"><i class="fas fa-chevron-right fa-2x text-white"></i></span>
+      </div>
+    </div>
+
+      </div>
+    </div>
+  </section>
+<!--footer-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 left-col">
+          <div class="footer-box-header">
+          <p>THÔNG TIN HỮU ÍCH</p>
+        </div>
+        <div class="footer-box-center">
+          <ul class="pl-0">
+            <li>
+              <a href="#" class="text-decoration-none text-dark">Review Truyện - Cafe Sách</a>
+            </li>
+            <li><a href="#" class="text-decoration-none text-dark">Tin tức</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Giới thiệu chung</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Thỏa thuận sử dụng dịch vụ</a></li>
+          </ul>
+        </div>
+        <div class="footer-box-footer logo">
+          <a href="#"><img src="image/logo.png" alt="" title="Thư viện sách nói"></a>
+        </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer-box-header">
+            <p>THÔNG TIN LIÊN HỆ</p>
+          </div>
+          <div class="footer-box-center">
+            <P>Công ty Cổ Phần Dogu (Dogu Corporation) - Văn phòng tại 54 Tôn Thất thiệp, Mỹ An, Ngũ Hành Sơn, Đà Nẵng</P>
+          <P>Chịu trách nhiệm nội dung: Đặng Ngọc Quang</P>
+        <P>Email: dnq1310@gmail.com | Tel: 038.3465492</P><P>Giấy xác nhận Đăng ký hoạt động phát hành xuất bản phẩm điện tử số 8132/XN-CXBIPH do Cục Xuất bản, In và Phát hành cấp ngày 31/12/2019</P>
+          </div>
+          <div class="footer-box-footer">
+            <a href="#"><span><i class="fab fa-facebook mr-4"></i></span></i></a>
+            <a href="#"><span><i class="fab fa-instagram-square"></i></span></a>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="footer-box-header"><p>VỀ CHÚNG TÔI</p></div>
+          <div class="footer-box-center"><p>Nhóm sinh hiện: Bùi Hoàng Hùng, Đặng Ngọc Quang.</p></div>
+          <div class="footer-box-footer"><p>Thuộc trường Đại học công nghệ thông tin và truyền thông hữu nghị Việt-Hàn.</p></div>
+          <div style="background: #000; color: #8a8a8a; padding: 10px;">
+            <h3>Download Our App </h3>
+            <div class="app-logo">
+              <img src="image/app-store.png">
+              <img src="image/play-store.png" alt="">
+            </div>            
+          </div>          
+        </div>
+      </div>
+    </div>
+  </footer>
+<!--animate-sidebar-->
+<div class="animate-sidebar">
+  <ul class="animate-sidebar-menu list-unstyled">
+    <li>
+      <a href="#" class="node-icon" title="Sách nói"><i class="fas fa-headphones-alt animate-menu-icon"></i></a>
+    </li>
+    <li>
+      <a href="index2.html" class="node-icon"  title="Truyện tranh"><i class="far fa-images animate-menu-icon"></i></a></li>
+    <li>
+    <a href="#" class="node-icon" title="Tin tức" ><i class="far fa-user animate-menu-icon"></i></a></li>
+      <li>
+        <a href="#" class="node-icon" title="về đầu trang"><i class="fas fa-arrow-up animate-menu-icon"></i></a></li>
+  </ul>
+</div>
+
+<!--Form Login-->
+<div id="id01" class="modal">
+  <form
+    class="modal-content animate"
+    action="lumino/index.html"
+    method="post" name="form01"
+    onsubmit="return submitLogin()" 
+  >
+    <div class="imgcontainer">
+      <span
+        onclick="document.getElementById('id01').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+      <img src="image/user.png" alt="Avatar" class="avatar" />
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        name="uname"
+        required
+      />
+
+      <label for="psw"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="psw-login"
+        id="myPsw"
+        required
+      />
+      <input type="checkbox" onclick="showPsw()"> Show Password
+      <span id="demo"></span>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" /> Remember
+        me
+      </label>
+    </div>
+
+    <div class="container" style="background-color: #f1f1f1;">
+      <button
+        type="button"
+        onclick="document.getElementById('id01').style.display='none'"
+        class="cancelbtn"
+      >
+        Cancel
+      </button>
+      <span class="psw" onclick="forgetpsw()">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!--Form SignUp-->
+
+<div id="id02" class="modal">
+  <form class="modal-content" action="" target="_self" onsubmit = "return confirmPsw()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" id="psw-repeat" name="psw-repeat"  value="" required>
+      <span id="message" style="color: red;"> </span> <br>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+  formLogin();
+</script>
+<script>
+  // When the user scrolls the page, execute myFunction 
+  window.onscroll = function() {myFunction()};
+</script>
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>

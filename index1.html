@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kho sách nói online/ offline</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    
+    <link rel="stylesheet" href="css/slick.css">
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="sticky-top" id="header">
+      
+    <div class="container p-0">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-12">
+          <div class="logo">
+          <a href="#">
+            <img src="image/logo.png" class="my-md-4" alt="" />
+          </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+          <h3 class="my-md-3 site-title" ><a href="index.html" title="Thư viện sách nói" style="color:#1ba085">AUDIO BOOK</a></h3>
+        </div>
+        <div class="col-md-4 col-12 float-right">
+          <p class="my-md-4 header-links text-right">
+            <a href="#" class="px-2 text-dark  header-links-item"     
+            onclick="document.getElementById('id01').style.display='block'"
+            style="width: auto;"   ><i class="far fa-user-circle"></i> ĐĂNG NHẬP</a>
+            &frasl;
+            <a href="#" class="px-1 text-dark header-links-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">TÀI KHOẢN MỚI</a>
+          </p>
+        </div>
+      </div>
+    </div>
+</header>
+    
+<div class="top-head-menu">
+  <div class="container p-0" >
+    <nav class="navbar navbar-expand-md navbar-light p-0">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              ><span><i class="fas fa-home"></i></span> TRANG CHỦ <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">SÁCH NÓI</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="allbook1.html">Tất cả</a>
+              <a class="dropdown-item" href="#">Việt Nam</a>
+              <a class="dropdown-item" href="#">Nước ngoài</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">TRUYỆN TRANH</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="index2.html">Tất cả</a>
+              <a class="dropdown-item" href="#">Việt Nam</a>
+              <a class="dropdown-item" href="#">Nước ngoài</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">TÁC GIẢ</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Tất cả</a>
+              <a class="dropdown-item" href="#">Việt Nam</a>
+              <a class="dropdown-item" href="#">Nước ngoài</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">VỀ CHÚNG TÔI</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-nav">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item" id="inp-search">
+            <input type="text" placeholder="Search.." style=" border-radius: 20px;" id="search"  autocomplete="off" name="search">
+  
+          </li>
+          <li
+            class="nav-item border rounded-circle mx-2 basket-icon list-inline-item"
+          >
+            <i class="fas fa-shopping-basket p-2"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  </div>
+
+<!--book-media-->
+<div class="container pt-3">
+  <marquee behavior="scroll" direction="left">Chúc các bạn một ngày vui vẻ !</marquee>
+  <div class="row">
+    <div class="col-9 bg-white h-100">
+      <div class=" mb-3">
+        <div class="row no-gutters pt-3">
+          <div class="col-2">
+            <img src="image/2301.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="col-10">
+            <div class="card-body pt-0 ml-5">
+              <h5 class="card-title">Hành tẩu âm dương - Tập 1</h5>
+              <span id="heart-icon" 
+              onclick="click1(this)" 
+              style="right: 0;
+              position: absolute;
+              font-size: 25px;top:0;"><i class="fas fa-heart" title="Thêm vào yêu thích"></i></span>
+              <p class="card-text">Tác giả: <small class="text-secondary">A Thất</small></p>
+              <p class="card-text">Thể loại: <small class="text-secondary">Sách nói</small></p>
+              <p class="card-text">Thời lượng: <small class="text-secondary">01:46:55</small></p>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      <div>
+        <div class="bg-black">
+        <video controls id="videoPlayer" width="100%" height="200px" autoplay>
+          <source src="" type="audio/mpeg">
+        </video>
+        </div>
+        <ul id="playlist" class="list-unstyled text-center">
+          <li class="current-video my-3 row">
+            <a href="audio/Audiobook truyện HÀNH TẨU ÂM DƯƠNG chương 1 - Tác giả A Thất - Bản quyền Waka.mp4" class="col-1 stt">
+              01</a>
+            <a href="audio/Audiobook truyện HÀNH TẨU ÂM DƯƠNG chương 1 - Tác giả A Thất - Bản quyền Waka.mp4" class="col-2">
+                Chương 1</a>
+            <a href="audio/Audiobook truyện HÀNH TẨU ÂM DƯƠNG chương 1 - Tác giả A Thất - Bản quyền Waka.mp4" class="col-6">
+                Quạ đen xui xẻo</a>
+            
+
+              
+          </li>
+          <li class="row">
+            <a href="audio/Audiobook truyện HÀNH TẨU ÂM DƯƠNG chương 2 - Tác giả A Thất - Bản quyền Waka.mp4" class="col-1 stt">02
+          </a>
+          <a href="audio/Audiobook truyện HÀNH TẨU ÂM DƯƠNG chương 2 - Tác giả A Thất - Bản quyền Waka.mp4" class="col-2">Chương 2
+          </a>
+          <a href="audio/Audiobook truyện HÀNH TẨU ÂM DƯƠNG chương 2 - Tác giả A Thất - Bản quyền Waka.mp4"class="col-6">Oán quỷ si tình
+          </a>
+          
+          </li>
+          
+        </ul>
+        <div class="text-right">
+          <span>Giọng đọc: <strong>Quách Hà</strong></span>
+        </div>
+        <div class="mt-4">
+          <p class="text-justify">Ngay phía trên chữ sắc là một con dao, cậu ta gia nhập Đạo môn, không chuyên tâm tu luyện, lại còn suốt ngày đi tìm đàn bà, khiến dương khí quá yếu, vậy mới bị oán quỷ bám vào người, cuối cùng hại chính mình!
+          Có nhiều khi số mệnh chính là như vậy. Dogu trân trọng giới thiệu đến các bạn <b>tập 1</b> (từ chương 1 - 2) của cuốn tiểu thuyết linh dị dài kỳ mang tên <b>"Hành tẩu âm dương" - Tác giả A Thất.</b> </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 bg-white mw-22 ml-3 p-5">
+      <h4 class="mb-5 text-center">Truyện Khác</h4>
+
+      <div class="card mb-4">
+        <a href="#" class="card-book-img">
+          <img
+            src="image/business/25438.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="view">
+            <span class="play-btn"><i class="fas fa-play"></i></span>
+            <div class="card-book-desc top-69">
+              <p>01 giờ, 46 phút</p>
+              <p>Sách nói, truyện đọc</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card  mb-4">
+        <a href="#" class="card-book-img">
+          <img
+            src="image/2289.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="view">
+            <span class="play-btn"><i class="fas fa-play"></i></span>
+            <div class="card-book-desc top-69">
+              <p>01 giờ, 46 phút</p>
+              <p>Sách nói, truyện đọc</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card  mb-4">
+        <a href="#" class="card-book-img">
+          <img
+            src="image/business/24999.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="view">
+            <span class="play-btn"><i class="fas fa-play"></i></span>
+            <div class="card-book-desc top-69">
+              <p>01 giờ, 46 phút</p>
+              <p>Sách nói, truyện đọc</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    videoPlayer();
+  </script>
+
+    
+</div>
+<div class="container pt-3">
+  <div class="row ">
+    <div class="col-9 bg-white">
+      <div style="padding: 5px; border-bottom: 1px solid #ccc;">
+        <h3>Có thể bạn sẽ thích</h3>
+      </div>
+      <div class="site-slider-qc mt-3">
+          <div class="slider-qc">
+            <div class="mr-2">
+              <div class="card">
+                <a href="#">
+                <img src="image/696.jpg" alt="" class="card-img-top w-100">
+                </a>
+              <div class="card-body p-2">
+                <p class="card-title"><a href="#">Sự tích trái sầu riêng</a></p>
+                <p class="card-author"><a href="#">Seth Godin</a></p>
+                
+                <p class="card-rate"><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span></p>
+              </div>
+              <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span>
+              </div>
+              </div>
+            </div>
+            <div  class="mr-2">
+              <div class="card">
+                <a href="#">
+                <img src="image/412.jpg" alt="" class="card-img-top w-100">
+                </a>
+              <div class="card-body p-2">
+                <p class="card-title"><a href="#">Thất dạ đàm (Tập 3)</a></p>
+                <p class="card-author"><a href="#">Thập Tứ Khuyết</a></p>
+                
+                <p class="card-rate"><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star "></span></p>
+              </div>
+              <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span>
+              </div>
+              </div>
+            </div>
+            <div  class="mr-2">
+              <div class="card ">
+                <a href="#">
+                <img src="image/3110.jpg" alt="" class="card-img-top w-100">
+                </a>
+              <div class="card-body p-2">
+                <p class="card-title"><a href="#">Làm ít hơn, kiếm tiền..</a></p>
+                <p class="card-author"><a href="#">Phạm Thị Phương</a></p>
+                
+                <p class="card-rate"><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star "></span></p>
+              </div>
+              <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span>
+              </div>
+              </div>
+            </div>
+
+            <div  class="mr-2 ">
+              <div class="card qc">
+                <a href="#">
+                <img src="image/10356.jpg" alt="" class="card-img-top w-100">
+                </a>
+              <div class="card-body p-2">
+                <p class="card-title"><a href="#">Tuyết Lạc Trần Duyên</a></p>
+                <p class="card-author"><a href="#">Nhung Vũ</a></p>
+                
+                <p class="card-rate"><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span></p>
+              </div>
+              <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span>
+              </div>
+              </div>
+            </div>
+
+            <div class="mr-2">
+              <div class="card ">
+                <a href="#">
+                <img src="image/10817.jpg" alt="" class="card-img-top w-100">
+                </a>
+              <div class="card-body p-2">
+                <p class="card-title"><a href="#">Giường đàn bà</a></p>
+                <p class="card-author"><a href="#">Cửu Đan</a></p>
+                
+                <p class="card-rate"><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span></p>
+              </div>
+              <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span>
+              </div>
+              </div>
+            </div>
+
+            <div class="mr-2">
+              <div class="card ">
+                <a href="#">
+                <img src="image/504.jpg" alt="" class="card-img-top w-100">
+                </a>
+              <div class="card-body p-2">
+                <p class="card-title"><a href="#">1911 - Tập 1</a></p>
+                <p class="card-author"><a href="#">Chi Còi</a></p>
+                
+                <p class="card-rate"><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star "></span></p>
+              </div>
+              <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span>
+              </div>
+              </div>
+            </div>
+            <div class="mr-2">
+              <div class="card ">
+                <a href="#">
+                <img src="image/11962.jpg" alt="" class="card-img-top w-100">
+                </a>
+              <div class="card-body p-2">
+                <p class="card-title"><a href="#">Series Biên niên sử nhà</a></p>
+                <p class="card-author"><a href="#">Rick Riordan</a></p>
+                
+                <p class="card-rate"><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star "></span></p>
+              </div>
+              <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span>
+              </div>
+              </div>
+            </div>
+            <div class="mr-2">
+              <div class="card ">
+                <a href="#">
+                <img src="image/23303.jpg" alt="" class="card-img-top w-100">
+                </a>
+              <div class="card-body p-2">
+                <p class="card-title"><a href="#">Bên kia giấc mơ</a></p>
+                <p class="card-author"><a href="#">Nhóm 4.0</a></p>
+                
+                <p class="card-rate"><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star "></span></p>
+              </div>
+              <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span>
+              </div>
+              </div>
+            </div>
+            <div class="mr-2">
+              <div class="card ">
+                <a href="#">
+                <img src="image/11941.jpg" alt="" class="card-img-top w-100">
+                </a>
+              <div class="card-body p-2">
+                <p class="card-title"><a href="#">Series - Sức mạnh hắc ám</a></p>
+                <p class="card-author"><a href="#">Kelley ArmStrong</a></p>
+                
+                <p class="card-rate"><span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star "></span>
+                  <span class="fa fa-star "></span></p>
+              </div>
+              <div class="icon view"><span class="icon-book"><i class="fas fa-headphones"></i></span>
+              </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="slider-btn">
+            <span class="prev position-top bg" ><i class="fas fa-chevron-left"></i></span>
+            <span class="next position-top right-0 bg"><i class="fas fa-chevron-right"></i></span>
+          </div>
+      </div>
+    </div>
+  <div class="col-3 bg-white mw-22 ml-3 p-2">
+    <div class="mb-3 tiltle-connect"><h5>Kết nối chúng tôi</h5></div>
+    <div class="card ">
+    <div class=""><a href="https://www.facebook.com/tranquangdai.vn" target="_blank">
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftranquangdai.vn&tabs=timeline&width=238&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="238" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></a>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+  <section class="quotes">
+    <div class="container">
+      <div class="site-slider-three">
+      <div class="slider-three">
+        
+        <div><p class="cus-name">_ Cư xử như người thành công, suy nghĩ như người thành đạt, Steve Harvey _</p>
+          <p class="cus-quotes"><span class="mr-1"><i class="fas fa-quote-left"></i></span>Bạn của tôi, cảm giác chán ghét bản thân không phải là xấu, vì nó có nghĩa là bạn sẵn sàng tạo nên những thay đổi trong cuộc đời để đạt được những phần thưởng lớn lao.</p>
+        </div>
+
+        <div><p class="cus-name">_ Cư xử như người thành công, suy nghĩ như người thành đạt, Steve Harvey _</p>
+          <p class="cus-quotes"><span ><i class="fas fa-quote-left"></i></span> Bạn của tôi, cảm giác chán ghét bản thân không phải là xấu, vì nó có nghĩa là bạn sẵn sàng tạo nên những thay đổi trong cuộc đời để đạt được những phần thưởng lớn lao.</p>
+        </div>
+        <div><p class="cus-name">_ Cư xử như người thành công, suy nghĩ như người thành đạt, Steve Harvey _</p>
+          <p class="cus-quotes"><span ><i class="fas fa-quote-left"></i></span> Bạn của tôi, cảm giác chán ghét bản thân không phải là xấu, vì nó có nghĩa là bạn sẵn sàng tạo nên những thay đổi trong cuộc đời để đạt được những phần thưởng lớn lao.</p>
+        </div>
+      </div>
+      <div class="slider-btn">
+        <span class="prev position-top"><i class="fas fa-chevron-left fa-2x text-white"></i></span>
+        <span class="next position-top right-0"><i class="fas fa-chevron-right fa-2x text-white"></i></span>
+      </div>
+    </div>
+
+      </div>
+    </div>
+  </section>
+<!--footer-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 left-col">
+          <div class="footer-box-header">
+          <p>THÔNG TIN HỮU ÍCH</p>
+        </div>
+        <div class="footer-box-center">
+          <ul class="pl-0">
+            <li>
+              <a href="#" class="text-decoration-none text-dark">Review Truyện - Cafe Sách</a>
+            </li>
+            <li><a href="#" class="text-decoration-none text-dark">Tin tức</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Giới thiệu chung</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Thỏa thuận sử dụng dịch vụ</a></li>
+          </ul>
+        </div>
+        <div class="footer-box-footer logo">
+          <a href="#"><img src="image/logo.png" alt="Việt Nam"></a>
+        </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="footer-box-header">
+            <p>THÔNG TIN LIÊN HỆ</p>
+          </div>
+          <div class="footer-box-center">
+            <P>Công ty Cổ Phần Dogu (Dogu Corporation) - Văn phòng tại 54 Tôn Thất thiệp, Mỹ An, Ngũ Hành Sơn, Đà Nẵng</P>
+          <P>Chịu trách nhiệm nội dung: Đặng Ngọc Quang</P>
+        <P>Email: dnq1310@gmail.com | Tel: 038.3465492</P><P>Giấy xác nhận Đăng ký hoạt động phát hành xuất bản phẩm điện tử số 8132/XN-CXBIPH do Cục Xuất bản, In và Phát hành cấp ngày 31/12/2019</P>
+          </div>
+          <div class="footer-box-footer">
+            <a href="#"><span><i class="fab fa-facebook mr-4"></i></span></i></a>
+            <a href="#"><span><i class="fab fa-instagram-square"></i></span></a>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="footer-box-header"><p>VỀ CHÚNG TÔI</p></div>
+          <div class="footer-box-center"><p>Nhóm sinh hiện: Bùi Hoàng Hùng, Đặng Ngọc Quang.</p></div>
+          <div class="footer-box-footer"><p>Thuộc trường Đại học công nghệ thông tin và truyền thông hữu nghị Việt-Hàn.</p></div>
+          <div style="background: #000; color: #8a8a8a; padding: 10px;">
+            <h3>Download Our App </h3>
+            <div class="app-logo">
+              <img src="image/app-store.png">
+              <img src="image/play-store.png" alt="">
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--animate-sidebar-->
+<div class="animate-sidebar">
+  <ul class="animate-sidebar-menu list-unstyled">
+    <li>
+      <a href="allbook1.html" class="node-icon" title="Sách nói"><i class="fas fa-headphones-alt animate-menu-icon"></i></a>
+    </li>
+    <li>
+      <a href="index2.html" class="node-icon"  title="Truyện tranh"><i class="far fa-images animate-menu-icon"></i></a></li>
+    <li>
+     <a href="#" class="node-icon" title="Tin tức" ><i class="far fa-user animate-menu-icon"></i></a></li>
+      <li>
+        <a href="#" class="node-icon" title="về đầu trang"><i class="fas fa-arrow-up animate-menu-icon"></i></a></li>
+  </ul>
+</div>
+
+<!--Form Login-->
+<div id="id01" class="modal">
+  <form
+    class="modal-content animate"
+    action=""
+    method="post"
+  >
+    <div class="imgcontainer">
+      <span
+        onclick="document.getElementById('id01').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+      <img src="image/user.png" alt="Avatar" class="avatar" />
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        name="uname"
+        required
+      />
+
+      <label for="psw"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="psw"
+        required
+      />
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" /> Remember
+        me
+      </label>
+    </div>
+
+    <div class="container" style="background-color: #f1f1f1;">
+      <button
+        type="button"
+        onclick="document.getElementById('id01').style.display='none'"
+        class="cancelbtn"
+      >
+        Cancel
+      </button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!--Form SignUp-->
+
+<div id="id02" class="modal">
+  <form class="modal-content" action="" target="_self" onsubmit = "return confirmPsw()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="psw" name="psw" value="" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" id="psw-repeat" name="psw-repeat"  value="" required>
+      <span id="message" style="color: red;"> </span> <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+  formLogin();
+</script>
+
+
+ <!-- jQuery library -->
+ <script src="jquery-3.5.1.min.js"></script>
+ <script src="js/slick.min.js"></script>
+ <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ <script src="js/main.js"></script>
+  </body>
+</html>

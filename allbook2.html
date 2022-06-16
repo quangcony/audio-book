@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kho sách nói online/ offline</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="css/slick.css">
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="sticky-top" id="header">
+      
+    <div class="container p-0">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-12">
+          <div class="logo">
+          <a href="#">
+            <img src="image/logo.png" class="my-md-4" alt="" />
+          </a>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+          <h3 class="my-md-3 site-title" ><a href="index.html" title="Thư viện sách nói" style="color:#1ba085">AUDIO BOOK</a></h3>
+        </div>
+        <div class="col-md-4 col-12 float-right">
+          <p class="my-md-4 header-links text-right">
+            <a href="#" class="px-2 text-dark  header-links-item"     
+            onclick="document.getElementById('id01').style.display='block'"
+            style="width: auto;"   ><i class="far fa-user-circle"></i> ĐĂNG NHẬP</a>
+            &frasl;
+            <a href="#" class="px-1 text-dark header-links-item" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">TÀI KHOẢN MỚI</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    </header>
+    
+  <div class="top-head-menu">
+    <div class="container p-0">
+      <nav class="navbar navbar-expand-md navbar-light p-0">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                ><span><i class="fas fa-home"></i></span> TRANG CHỦ <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">SÁCH NÓI</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="allbook1.html">Tất cả</a>
+                <a class="dropdown-item" href="#">Việt Nam</a>
+                <a class="dropdown-item" href="#">Nước ngoài</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">TRUYỆN TRANH</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="index2.html">Tất cả</a>
+                <a class="dropdown-item" href="#">Việt Nam</a>
+                <a class="dropdown-item" href="#">Nước ngoài</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">TÁC GIẢ</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tất cả</a>
+                <a class="dropdown-item" href="#">Việt Nam</a>
+                <a class="dropdown-item" href="#">Nước ngoài</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">VỀ CHÚNG TÔI</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-nav">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item" id="inp-search">
+              <input type="text" placeholder="Search.." style=" border-radius: 20px;" id="search"  autocomplete="off" name="search">
+      
+            </li>
+            <li
+              class="nav-item border rounded-circle mx-2 basket-icon list-inline-item"
+            >
+              <i class="fas fa-shopping-basket p-2"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </div>
+    
+    <div class="content">
+      <div class="container">
+
+
+        <div class="row">
+          <div class="col-7">
+            <h3>Sách nói</h3>
+          </div>
+          
+        <div class="selection col-5" id="myBtnContainer">
+          <ul class="list-inline" id="list">
+            <li class="list-inline-item active" onclick="filterSelection('all')">Tất cả</li>
+            <li class="list-inline-item" onclick="filterSelection('business')">Kinh doanh</li>
+            <li class="list-inline-item" onclick="filterSelection('skill')">Kỹ năng</li>
+            <li class="list-inline-item" onclick="filterSelection('romance')">Ngôn tình</li>
+          </ul>
+        </div>
+      </div>
+
+
+        <div class="row row-cols-1 row-cols-md-5">
+          <div class="col my-4 filterDiv business">
+            <div class="card h-100">
+              <a href="#" class="card-book-img">
+                <img
+                  src="image/business/25945.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="view">
+                  <span class="play-btn"><i class="fas fa-play"></i></span>
+                  <div class="card-book-desc">
+                    <p>01 giờ, 46 phút</p>
+                    <p>Sách nói, truyện đọc</p>
+                  </div>
+                </div>
+              </a>
+              <div class="card-body">
+                <a href="#">
+                  <h6 class="card-title">Hoàng Hà phục yêu truyện - Tập 3</h6>
+                </a>
+                <a href="#">
+                  <p class="card-text">
+                    Long Phi Có Yêu Khí
+                  </p>
+                </a>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+              
+            </div>
+            </div>
+          <div class="col my-4 filterDiv romance">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/romance/26028.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hoàng Hà phục yêu truyện - Tập 3</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  Long Phi Có Yêu Khí
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+          </div>
+          <div class="col my-4 filterDiv skill ">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/skill/25762.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+          </div>
+          <div class="col my-4 filterDiv business">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/business/25989.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+          </div>
+          </div>
+          <div class="col my-4 filterDiv romance">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/romance/26029.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            </div> 
+        </div>
+        <div class="col my-4 filterDiv skill">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/skill/25875.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            </div> 
+        </div>
+        <div class="col my-4 filterDiv business">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/business/24997.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            </div> 
+        </div>
+        <div class="col my-4 filterDiv romance">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/romance/26031.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            </div> 
+        </div>
+        <div class="col my-4 filterDiv skill">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/skill/25876.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            </div> 
+        </div>
+        <div class="col my-4 filterDiv business">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/business/24999.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            </div> 
+        </div>
+        <div class="col my-4 filterDiv romance">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/romance/26038.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            </div> 
+        </div>
+        <div class="col my-4 filterDiv skill">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/skill/25942.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            </div> 
+        </div>
+        <div class="col my-4 filterDiv business">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/business/25156.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            </div> 
+        </div>
+        <div class="col my-4 filterDiv romance">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/romance/26044.jpg"
+                alt="..."  class="card-img-top"
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            </div> 
+        </div>
+        <div class="col my-4 filterDiv skill">
+          <div class="card h-100">
+            <a href="#" class="card-book-img">
+              <img
+                src="image/skill/25992.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="view">
+                <span class="play-btn"><i class="fas fa-play"></i></span>
+                <div class="card-book-desc">
+                  <p>01 giờ, 46 phút</p>
+                  <p>Sách nói, truyện đọc</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-body">
+              <a href="#">
+                <h6 class="card-title">Hành tẩu âm dương - Tập 1</h6>
+              </a>
+              <a href="#">
+                <p class="card-text">
+                  A Thất
+                </p>
+              </a>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+            </div>
+            </div> 
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-end">
+        <li class="page-item">
+          <a class="page-link" href="allbook1.html" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="allbook1.html">1</a></li>
+        <li class="page-item  active"><a class="page-link" href="allbook2.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="allbook2.html" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <section>
+    <div class="container">
+      <div class="row cat-box bg-warning">
+        <div class="col-sm-3 left">
+          <div class="cat-desc relative">
+            <div class="left-top-corner absolute"></div>
+            <div class="right-top-corner absolute"></div>
+            <div class="left-bottom-corner absolute"></div>
+            <div class="right-bottom-corner absolute"></div>
+
+                <span>TUYỂN TẬP</span>
+                <div class="h-wrap">SÁCH NÓI</div>
+                <span>HAY NHẤT</span>
+          </div>
+        </div>
+        <div class="col-sm-9 right">
+          <div class="site-slider-two">
+          <div class="slider-two">
+            <div> <a href="#">
+              <img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book_collection/0/0/0/448.jpg?v=1&w=315&h=155" alt="" class="img-fluid rounded">
+            </a>
+            </div>
+            <div>
+              <a href="#"><img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book_collection/0/0/0/449.jpg?v=1&w=315&h=155" alt="" class="img-fluid rounded"> 
+          </a></div>
+            <div>
+              <a href="#"><img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book_collection/0/0/0/450.jpg?v=1&w=315&h=155" alt="" class="img-fluid rounded">
+              </a></div>
+            <div><a href="#"><img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book_collection/0/0/0/453.jpg?v=1&w=315&h=155" alt="" class="img-fluid rounded"> </a></div>
+            <div><a href="#"><img src="https://307a0e78.vws.vegacdn.vn/view/v2/image/img.book_collection/0/0/0/738.jpg?v=1&w=315&h=155" alt="" class="img-fluid rounded"> </a></div>
+          </div>
+          <div class="slider-btn">
+            <span class="prev position-top left-1 bg" style="top: 30% ;"><i class="fas fa-chevron-left"></i></span>
+            <span class="next position-top right-0 bg" style="top: 30% ;"><i class="fas fa-chevron-right"></i></span>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section class="quotes">
+    <div class="container">
+      <div class="site-slider-three">
+      <div class="slider-three">
+        
+        <div><p class="cus-name">_ Cư xử như người thành công, suy nghĩ như người thành đạt, Steve Harvey _</p>
+          <p class="cus-quotes"><span ><i class="fas fa-quote-left"></i></span>Bạn của tôi, cảm giác chán ghét bản thân không phải là xấu, vì nó có nghĩa là bạn sẵn sàng tạo nên những thay đổi trong cuộc đời để đạt được những phần thưởng lớn lao.</p>
+        </div>
+
+        <div><p class="cus-name">_ Cư xử như người thành công, suy nghĩ như người thành đạt, Steve Harvey _</p>
+          <p class="cus-quotes"><span ><i class="fas fa-quote-left"></i></span> Bạn của tôi, cảm giác chán ghét bản thân không phải là xấu, vì nó có nghĩa là bạn sẵn sàng tạo nên những thay đổi trong cuộc đời để đạt được những phần thưởng lớn lao.</p>
+        </div>
+        <div><p class="cus-name">_ Cư xử như người thành công, suy nghĩ như người thành đạt, Steve Harvey _</p>
+          <p class="cus-quotes"><span ><i class="fas fa-quote-left"></i></span> Bạn của tôi, cảm giác chán ghét bản thân không phải là xấu, vì nó có nghĩa là bạn sẵn sàng tạo nên những thay đổi trong cuộc đời để đạt được những phần thưởng lớn lao.</p>
+        </div>
+      </div>
+      <div class="slider-btn">
+        <span class="prev position-top"><i class="fas fa-chevron-left fa-2x text-white"></i></span>
+        <span class="next position-top right-0"><i class="fas fa-chevron-right fa-2x text-white"></i></span>
+      </div>
+    </div>
+
+      </div>
+  </section>
+<!--footer-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-col">
+        <div class="footer-box-header">
+        <p>THÔNG TIN HỮU ÍCH</p>
+      </div>
+      <div class="footer-box-center">
+        <ul class="pl-0">
+          <li>
+            <a href="#" class="text-decoration-none text-dark">Review Truyện - Cafe Sách</a>
+          </li>
+          <li><a href="#" class="text-decoration-none text-dark">Tin tức</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Giới thiệu chung</a></li>
+          <li><a href="#" class="text-decoration-none text-dark">Thỏa thuận sử dụng dịch vụ</a></li>
+        </ul>
+      </div>
+      <div class="footer-box-footer logo">
+        <a href="#"><img src="image/logo.png" alt="Việt Nam"></a>
+      </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="footer-box-header">
+          <p>THÔNG TIN LIÊN HỆ</p>
+        </div>
+        <div class="footer-box-center">
+          <P>Công ty Cổ Phần Dogu (Dogu Corporation) - Văn phòng tại 54 Tôn Thất thiệp, Mỹ An, Ngũ Hành Sơn, Đà Nẵng</P>
+        <P>Chịu trách nhiệm nội dung: Đặng Ngọc Quang</P>
+      <P>Email: dnq1310@gmail.com | Tel: 038.3465492</P><P>Giấy xác nhận Đăng ký hoạt động phát hành xuất bản phẩm điện tử số 8132/XN-CXBIPH do Cục Xuất bản, In và Phát hành cấp ngày 31/12/2019</P>
+        </div>
+        <div class="footer-box-footer">
+          <a href="#"><span><i class="fab fa-facebook mr-4"></i></span></i></a>
+          <a href="#"><span><i class="fab fa-instagram-square"></i></span></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer-box-header"><p>VỀ CHÚNG TÔI</p></div>
+        <div class="footer-box-center"><p>Nhóm sinh hiện: Bùi Hoàng Hùng, Đặng Ngọc Quang.</p></div>
+        <div class="footer-box-footer"><p>Thuộc trường Đại học công nghệ thông tin và truyền thông hữu nghị Việt-Hàn.</p></div>
+        <div style="background: #000; color: #8a8a8a; padding: 10px;">
+          <h3>Download Our App </h3>
+          <div class="app-logo">
+            <img src="image/app-store.png">
+            <img src="image/play-store.png" alt="">
+          </div>            
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--animate-sidebar-->
+<div class="animate-sidebar">
+  <ul class="animate-sidebar-menu list-unstyled">
+    <li>
+      <a href="allbook1.html" class="node-icon" title="Sách nói"><i class="fas fa-headphones-alt animate-menu-icon"></i></a>
+    </li>
+    <li>
+      <a href="index2.html" class="node-icon"  title="Truyện tranh"><i class="far fa-images animate-menu-icon"></i></a></li>
+    <li>
+     <a href="#" class="node-icon" title="Tin tức" ><i class="far fa-user animate-menu-icon"></i></a></li>
+      <li>
+        <a href="#" class="node-icon" title="về đầu trang"><i class="fas fa-arrow-up animate-menu-icon"></i></a></li>
+  </ul>
+</div>
+
+<!--Form Login-->
+<div id="id01" class="modal">
+  <form
+    class="modal-content animate"
+    action="#"
+    method="post"
+  >
+    <div class="imgcontainer">
+      <span
+        onclick="document.getElementById('id01').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+      <img src="image/user.png" alt="Avatar" class="avatar" />
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        name="uname"
+        required
+      />
+
+      <label for="psw"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="psw"
+        required
+      />
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" /> Remember
+        me
+      </label>
+    </div>
+
+    <div class="container" style="background-color: #f1f1f1;">
+      <button
+        type="button"
+        onclick="document.getElementById('id01').style.display='none'"
+        class="cancelbtn"
+      >
+        Cancel
+      </button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!--Form SignUp-->
+
+<div id="id02" class="modal">
+  <form class="modal-content" action="" target="_self" onsubmit = "return confirmPsw()">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="psw" name="psw" value="" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" id="psw-repeat" name="psw-repeat"  value="" required>
+      <span id="message" style="color: red;"> </span> <br>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
